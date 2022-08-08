@@ -1,0 +1,11 @@
+CURRENT_DIR := $(CURDIR)/CORE
+
+CURRENT_SRC_DIR := $(CURRENT_DIR)
+CURRENT_INC_DIR := $(CURRENT_DIR)
+
+SRC_C_FILES += $(wildcard $(CURRENT_SRC_DIR)/*.c)
+SRC_INCFILES += $(wildcard $(CURRENT_SRC_DIR)/*.h)
+SRC_CXX_FILES += $(wildcard $(CURRENT_SRC_DIR)/*.cpp)
+LINK_FILES += $(wildcard $(CURRENT_SRC_DIR)/*.ld)
+SRC_AMSFILES +=  $(wildcard $(CURRENT_SRC_DIR)/*.s)
+SRC_INCDIR += $(CURRENT_INC_DIR)
